@@ -40,7 +40,10 @@ values (seq_person_id.nextval, '서장훈', '010-5555-5555', '02-5555-5555');
 
 
 --select문 (데이터 입력 확인)
-select *
+select person_id,
+       name,
+       hp,
+       company
 from person;
 
 --update문 (데이터 수정) //이정재 휴대폰번호, 회사번호 수정
@@ -52,6 +55,16 @@ where person_id = 4;
 --delete문 (데이터 삭제) // 서장훈행 삭제
 delete from person
 where person_id = 5;
+
+--문자열 검색
+select person_id,
+        name,
+        hp,
+        company
+from person
+where name like '%이%'
+or hp like '%이%'
+or company like '%이%';
 
 ROLLBACK;
 COMMIT;
