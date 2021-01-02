@@ -279,6 +279,7 @@ public class PhoneDao {
 			query += " where name like ? ";
 			query += " or hp like ? ";
 			query += " or company like ? ";
+			query += " order by person_id "; // 검색 후 person_id가 0으로 표기됨 --> 변함없음
 			//System.out.println(query);
 			
 			//-- 검색 문자 입력값 (search)

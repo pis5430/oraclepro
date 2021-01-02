@@ -103,7 +103,7 @@ public class PhoneApp {
 				
 				// 검색 결과값 출력
 				// 검색 결과값에서 getPerson_id가 0으로 일괄표기됨 --> 고치는법찾기
-				// 서브쿼리처럼 정렬한뒤에 출력해 줘야되는지? 확인하기
+				// 서브쿼리처럼 정렬한뒤에 출력해 줘야되는지? 셀렉문에 바로 넣었더니 안됨 --> 서브쿼리로 넣어야되는지?
 				for(int i =0; i< phoneList.size(); i++) {
 					PersonVo vo = phoneList.get(i);
 					System.out.println(vo.getPerson_id() + ".   " + vo.getName() + "    " + vo.getHp() + "    " + vo.getCompany());
