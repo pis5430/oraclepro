@@ -1,5 +1,9 @@
 /*다음과 같은 내용의 SQL을 작성합니다.*/
 
+--계정생성
+create user phonedb IDENTIFIED by phonedb;
+grant connect, resource, dba to phonedb;
+
 --테이블 삭제
 drop table person;
 
